@@ -7,11 +7,11 @@ const router = express.Router();
 router
   .route("/")
   .get(mascotasController.getMascotas)
-  .post(mascotasController.postMascotas);
+  .post(mascotasController.postMascota);
 
 router
   .route("/:id")
-  .put(mascotasController.putMascotas)
-  .delete(mascotasController.deleteMascotas);
+  .put(mascotasController.putMascota)
+  .delete(mascotasController.deleteMascota);
 
 export default router;
