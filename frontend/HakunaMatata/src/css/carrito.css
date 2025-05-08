@@ -1,0 +1,96 @@
+.carrito-page {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 90%;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .titulo-carrito {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  
+  .total-pago {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px 0;
+  }
+  
+  
+  .card-producto {
+    background-color: #f4a62e;
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .imagen-producto {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+  }
+  
+  .detalle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cantidad button {
+    background-color: white;
+    color: #f4a62e;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cantidad button:hover {
+    background-color: #ffe4b3;
+  }
+  
+  .boton-pagar {
+    background-color: #a26300;
+    color: white;
+    padding: 30px 220px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .boton-pagar:hover {
+    background-color: #804f00;
+  }
+  
