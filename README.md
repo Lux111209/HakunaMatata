@@ -3,15 +3,18 @@
 **Hakuna Matata** es una tienda en línea especializada en productos para mascotas. Aquí puedes descubrir, comprar y gestionar todo lo que tu amigo peludo necesita. Nuestra plataforma permite administrar productos, clientes, mascotas, pedidos, ventas y reseñas, ofreciendo una experiencia completa tanto para usuarios como para administradores.
 
 
+
 🏪 Concepto
 
 En **Hakuna Matata** creemos que la felicidad de tus mascotas es lo más importante. Nuestra tienda virtual facilita la compra de alimentos, accesorios y servicios, así como la gestión de tus pedidos y la administración de la información de tus mascotas. ¡Con nosotros, el bienestar de tu mascota siempre está a un clic de distancia!
+
 
 
 👨‍💻 Creadores
 
 - Luz María Gasparío Ménez - 202000448
 - Jason Alessandro Méndez Blanco - 20230026
+
 
   
 ⚙️ Dependencias Principales
@@ -35,6 +38,7 @@ En **Hakuna Matata** creemos que la felicidad de tus mascotas es lo más importa
 - **react-router / react-router-dom**: Navegación entre páginas.
 - **jwt-decode**: Decodificación de tokens JWT en el cliente.
 - **@vitejs/plugin-react**: Integración de React con el entorno Vite.
+
 
 
 🛠️ Configuraciones Adicionales
