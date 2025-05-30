@@ -1,52 +1,17 @@
-import React, { useEffect, useState } from "react";
-import "../css/Clientes.css"; 
+import React from "react";
+import "../css/Clientes.css";
+import { useClientes } from "../components/hooks/useClientes"; // Ajusta la ruta si es necesario
 
 const Clientes = () => {
-  const [clientes, setClientes] = useState([]);
-  const [form, setForm] = useState({
-    nombreCliente: "",
-    emailCliente: "",
-    telefonoCliente: ""
-  });
-  const [editingId, setEditingId] = useState(null);
-
-  const fetchClientes = async () => {
-    const res = await fetch("/api/clientes");
-    const data = await res.json();
-    setClientes(data);
-  };
-
-  useEffect(() => {
-    fetchClientes();
-  }, []);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const method = editingId ? "PUT" : "POST";
-    const url = editingId ? `/api/clientes/${editingId}` : "/api/clientes";
-
-    await fetch(url, {
-      method,
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
-
-    setForm({ nombreCliente: "", emailCliente: "", telefonoCliente: "" });
-    setEditingId(null);
-    fetchClientes();
-  };
-
-  const handleDelete = async (id) => {
-    await fetch(`/api/clientes/${id}`, { method: "DELETE" });
-    fetchClientes();
-  };
-
-  const handleEdit = (cliente) => {
-    const { _id, ...clienteData } = cliente;
-    setForm(clienteData);
-    setEditingId(_id);
-  };
+  const {
+    clientes,
+    form,
+    setForm,
+    handleSubmit,
+    handleDelete,
+    handleEdit,
+    editingId
+  } = useClientes();
 
   return (
     <div className="clientes-container">
