@@ -1,0 +1,68 @@
+.clientes-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cliente-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.cliente-form input,
+.cliente-form button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.cliente-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cliente-form button:hover {
+  background-color: #218838;
+}
+
+.cliente-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cliente-card {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+}
+
+.card-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.card-buttons button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-buttons button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.card-buttons button:last-child {
+  background-color: #dc3545;
+  color: white;
+}

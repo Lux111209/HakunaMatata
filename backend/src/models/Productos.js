@@ -37,13 +37,6 @@ const productosSchema = new Schema(
         require: true,
         min: 0,
     },
- 
-    imagenesProducto: [{
-      url: {
-      type: String,
-      require: true,
-      }
-    }]
   },
   {
     timestamps: true,

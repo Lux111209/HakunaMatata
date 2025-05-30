@@ -1,0 +1,68 @@
+.mascotas-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mascota-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.mascota-form input,
+.mascota-form button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.mascota-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.mascota-form button:hover {
+  background-color: #388e3c;
+}
+
+.mascota-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mascota-card {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.card-buttons button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-buttons button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.card-buttons button:last-child {
+  background-color: #dc3545;
+  color: white;
+}

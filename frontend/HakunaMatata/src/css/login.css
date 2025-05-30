@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.app-background {
+  background-size:50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start; /* alinea a la izquierda */
+  align-items: center;
+  padding-left: 5%;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.login-box {
+  background-color: rgba(245, 166, 35, 0.95); /* leve transparencia opcional */
+  border-radius: 24px;
+  padding: 40px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.login-box input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 16px;
+  border: none;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input span {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.login-box a {
+  color: white;
+  font-size: 12px;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.login-box button {
+  background-color: #d88c1f;
+  border: none;
+  padding: 12px;
+  border-radius: 16px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
