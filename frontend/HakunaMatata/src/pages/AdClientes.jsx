@@ -1,8 +1,9 @@
 import React from "react";
 import "../css/Clientes.css";
-import { useClientes } from "../components/hooks/useClientes"; // Ajusta la ruta si es necesario
+import { useClientes } from "../components/hooks/useClientes";
 
 const Clientes = () => {
+  // Obtiene estados y funciones para manejar clientes (lista, formulario, acciones)
   const {
     clientes,
     form,
@@ -16,6 +17,7 @@ const Clientes = () => {
   return (
     <div className="clientes-container">
       <h2>Gestión de Clientes</h2>
+      {/* Formulario para agregar o editar un cliente */}
       <form className="cliente-form" onSubmit={handleSubmit}>
         <input
           type="text"
@@ -41,6 +43,7 @@ const Clientes = () => {
         <button type="submit">{editingId ? "Actualizar" : "Agregar"}</button>
       </form>
 
+      {/* Listado de clientes en tarjetas */}
       <div className="cliente-list">
         {clientes.map((cliente) => (
           <div className="cliente-card" key={cliente._id}>

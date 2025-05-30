@@ -1,48 +1,47 @@
 .terminos-container {
-    background-image: url('../assets/fondoTerminos.png'); 
-    background-size: 100%; 
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-color: #fff; 
-    padding: 80px 40px;
-    min-height: 100vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  
-  
-  .contenido {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-  }
-  
-  .imagen-lado img {
-    max-width: 300px;
-    height: auto;
-  }
-  
-  .texto-lado {
-    max-width: 600px;
-  }
-  
-  .texto-lado h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: 'Fredoka One', sans-serif;
-    color: #f5a623;
-  }
-  
-  .texto-lado p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
+  background-image: url('../assets/fondoTerminos.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #fff;
+  padding: 80px 40px;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+.contenido {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+}
+
+.imagen-lado img {
+  max-width: 300px;
+  height: auto;
+}
+
+.texto-lado {
+  max-width: 600px;
+}
+
+.texto-lado h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Fredoka One', sans-serif;
+  color: #f5a623;
+}
+
+.texto-lado p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}

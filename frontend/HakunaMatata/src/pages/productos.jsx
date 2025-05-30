@@ -9,6 +9,8 @@ import promo4 from '../assets/promo4.jpg';
 import promo5 from '../assets/promo5.jpg';
 import promo6 from '../assets/promo6.jpg';
 
+// Componente que muestra la página de productos y promociones.
+// Utiliza imágenes de fondo y tarjetas para mostrar promociones visualmente atractivas.
 function Productos() {
   return (
     <div
@@ -21,10 +23,12 @@ function Productos() {
         minHeight: '100vh'
       }}
     >
+      {/* Encabezado principal de la sección de productos */}
       <header className="productos-hero">
         <h1>Productos</h1>
       </header>
 
+      {/* Primera sección de promociones con tres tarjetas */}
       <section className="promociones-section">
         <h2>Promociones</h2>
         <div className="promociones-grid">
@@ -34,6 +38,7 @@ function Productos() {
         </div>
       </section>
 
+      {/* Segunda sección de promociones con otras tres tarjetas */}
       <section className="promociones-section">
         <h2>Promociones</h2>
         <div className="promociones-grid">

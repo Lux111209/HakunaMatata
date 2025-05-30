@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import "../css/login.css";
 import loginBg from "../assets/Login.png";
 
+// Componente de login: permite al usuario iniciar sesión con email y contraseña.
 const Login = () => {
+  // Estados para los campos del formulario y control de errores/carga
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // Envía los datos de login al backend y gestiona la respuesta
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
@@ -20,7 +23,7 @@ const Login = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        credentials: "include", // Para enviar/recibir cookies si usas cookie
+        credentials: "include",
         body: JSON.stringify({ email, password }),
       });
 
@@ -29,12 +32,9 @@ const Login = () => {
       if (!res.ok) {
         setError(data.message || "Error en login");
       } else {
-        // Guardar token en localStorage para usar luego en otras pantallas
         if (data.token) {
           localStorage.setItem("token", data.token);
         }
-
-        // Redirigir a la ruta indicada desde el backend o a /adInicio
         window.location.href = data.redirectTo || "/adInicio";
       }
     } catch (err) {
@@ -101,4 +101,3 @@ const Login = () => {
 };
 
 export default Login;
-

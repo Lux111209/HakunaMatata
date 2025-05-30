@@ -1,55 +1,54 @@
 .sobre-nosotros {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 80px 20px;
-    text-align: center;
-    color: #fff;
-    position: relative;
-    min-height: 65vh;
-  }
-  
-  .overlay {
-    padding: 60px 20px;
-    border-radius: 20px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .titulo {
-    font-family: 'Fredoka One', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #fff;
-  }
-  
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    z-index: 2;
-    position: relative;
-  }
-  
-  .card {
-    background-color: rgba(255, 255, 255, 0.95);
-    color: #333;
-    width: 300px;
-    max-width: 90%;
-    padding: 30px 20px;
-    border-radius: 20px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #f5a623;
-  }
-  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  min-height: 65vh;
+}
+
+.overlay {
+  padding: 60px 20px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.titulo {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  z-index: 2;
+  position: relative;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+  width: 300px;
+  max-width: 90%;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #f5a623;
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import "../css/Products.css";
-import { useProductos } from "../components/hooks/useProductos"; // Ajusta la ruta si es necesario
+import { useProductos } from "../components/hooks/useProductos";
 
+// Componente para gestionar productos: permite agregar, editar, eliminar y listar productos.
 const Products = () => {
   const {
     productos,
@@ -16,6 +17,7 @@ const Products = () => {
   return (
     <div className="products-container">
       <h2>Gestión de Productos</h2>
+      {/* Formulario para agregar o editar un producto */}
       <form onSubmit={handleSubmit} className="product-form">
         <input
           type="text"
@@ -56,6 +58,7 @@ const Products = () => {
         <button type="submit">{editingId ? "Actualizar" : "Agregar"}</button>
       </form>
 
+      {/* Lista de productos */}
       <div className="product-list">
         {productos.map((producto) => (
           <div key={producto._id} className="product-card">

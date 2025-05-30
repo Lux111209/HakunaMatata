@@ -1,7 +1,8 @@
 import React from "react";
 import "../css/Mascotas.css";
-import { useMascotas } from "../components/hooks/useMascotas"; // Ajusta la ruta según tu estructura
+import { useMascotas } from "../components/hooks/useMascotas";
 
+// Componente para gestionar mascotas: permite registrar, editar, eliminar y listar mascotas asociadas a un cliente.
 const Mascotas = () => {
   const {
     mascotas,
@@ -17,6 +18,7 @@ const Mascotas = () => {
   return (
     <div className="mascotas-container">
       <h2>Gestión de Mascotas</h2>
+      {/* Formulario para agregar o editar una mascota */}
       <form className="mascota-form" onSubmit={handleSubmit}>
         <select
           value={form._idCliente}
@@ -30,7 +32,6 @@ const Mascotas = () => {
             </option>
           ))}
         </select>
-
         <input
           type="text"
           placeholder="Nombre"
@@ -64,6 +65,7 @@ const Mascotas = () => {
         </button>
       </form>
 
+      {/* Lista de mascotas registradas */}
       <div className="mascota-list">
         {mascotas.map((mascota) => (
           <div className="mascota-card" key={mascota._id}>

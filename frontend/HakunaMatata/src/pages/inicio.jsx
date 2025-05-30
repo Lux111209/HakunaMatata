@@ -6,6 +6,7 @@ import jugueteImg from '../assets/juguete.png';
 import accesoriosImg from '../assets/accesorios.jpg';
 import bellezaImg from '../assets/belleza.webp';
 
+// Componente principal de la página de inicio, muestra secciones de bienvenida, categorías y promociones.
 const HomePage = () => {
   return (
     <div
@@ -18,7 +19,7 @@ const HomePage = () => {
         minHeight: '100vh'
       }}
     >
-      {/* Hero Section */}
+      {/* Sección principal (hero) */}
       <section className="hero">
         <div className="hero-content">
           <p>Consiente a tu</p>
@@ -27,7 +28,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Categorías */}
+      {/* Sección de categorías */}
       <section className="categories">
         <h2>Categorías</h2>
         <div className="category-list">
@@ -40,8 +41,7 @@ const HomePage = () => {
 
       <br />
 
-
-      {/* Promociones */}
+      {/* Sección de promociones */}
       <section className="promotions">
         <h2>Promociones</h2>
         <div className="promo-cards">

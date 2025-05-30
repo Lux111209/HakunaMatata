@@ -3,12 +3,14 @@ import { useNavigate } from "react-router-dom";
 import "../css/AdInicio.css";
 import { jwtDecode } from "jwt-decode";  
 
+// Componente para el panel administrativo. Verifica si el usuario es admin y permite navegar a distintas gestiones.
 const AdInicio = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
     const token = localStorage.getItem("token");
 
+    // Si no hay token o el usuario no es admin, redirige a inicio.
     if (!token) {
       navigate("/");
       return;

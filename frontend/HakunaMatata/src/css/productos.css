@@ -1,53 +1,52 @@
 .productos-page {
-    font-family: 'Fredoka One', sans-serif;
-    color: #000000;
-  }
-  
-  .productos-hero {
-    text-align: center;
-    padding: 50px 20px 20px;
-    color: white;
-    font-size: 2rem;
-  }
-  
-  .promociones-section {
-    padding: 30px 60px;
-  }
-  
-  .promociones-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Nueva versión de promociones-grid */
-  .promociones-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  /* Card con imagen y efecto */
-  .promo-card {
-    width: 250px;
-    height: 160px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .promo-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  .promo-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
-  }
-  
+  font-family: 'Fredoka One', sans-serif;
+  color: #000000;
+}
+
+.productos-hero {
+  text-align: center;
+  padding: 50px 20px 20px;
+  color: white;
+  font-size: 2rem;
+}
+
+.promociones-section {
+  padding: 30px 60px;
+}
+
+.promociones-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Nueva versión de promociones-grid */
+.promociones-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card con imagen y efecto */
+.promo-card {
+  width: 250px;
+  height: 160px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.promo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.promo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
